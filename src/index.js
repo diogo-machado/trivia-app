@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import Reset from './styles/generic/Reset';
+import Base from './styles/elements/Base';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Reset/>
+    <Base/>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
