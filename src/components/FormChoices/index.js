@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import Box from '../Box';
 
-const FormSignupLogin = styled(Box).attrs({as:'form'})`
-    width: 600px;
-    height: 420px;
+const FormChoices = styled(Box).attrs({as:'form'})`
+    /* width: 600px;
+    height: 420px; */
 
     display: flex;
     flex-direction: column;
@@ -11,4 +11,4 @@ const FormSignupLogin = styled(Box).attrs({as:'form'})`
     justify-content: center;
 `;
 
-export default FormSignupLogin;
+export default FormChoices;

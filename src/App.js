@@ -1,29 +1,23 @@
-import Box from './components/Box'
-import FormSignupLogin from './components/FormSignupLogin'
-import Main from './components/Main'
-import Title from './components/Title'
-import Label from './components/Label'
-import SelectInput from './components/SelectInput'
+import React from 'react'
+import MainScreen from './screens/MainScreen'
+import TriviaScreen from './screens/TriviaScreen'
+import ScoreScreen from './screens/ScoreScreen'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Main from './components/Main'
 
 
 function App() {
   return (
-    <Main>
-      <Title>Trivia Game</Title>
-      <FormSignupLogin>
-        <Label>Select category:</Label>
-        <SelectInput>
-
-        </SelectInput>
-        
-        <Label>Select difficulty:</Label>
-        <SelectInput>
-
-        </SelectInput>
-      </FormSignupLogin>
-    </Main>
+    <Router>
+      <Switch>
+        <Main>
+          <Route path="/" exact component={MainScreen} />
+          <Route path="/trivia" component={TriviaScreen} />
+          <Route path="/score" component={ScoreScreen} />
+        </Main>
+      </Switch>
+    </Router>
   );
 }
 
