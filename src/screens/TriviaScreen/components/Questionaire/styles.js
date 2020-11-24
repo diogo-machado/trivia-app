@@ -12,6 +12,11 @@ const QuestionaireBox = styled.div.attrs(props => ({
 
     display: flex;
     flex-direction: column;
+
+    @media(max-width: 769px) {
+        width: 350px;
+    }
+        
 `;
 
 const  QuestionBox = styled.div`
@@ -20,7 +25,7 @@ const  QuestionBox = styled.div`
     align-items: center;
     
     background-color: #F4F4F4;
-    height: 50px;
+    min-height: 50px;
     padding: 18px;
     margin: 23px 20px;
 `;
@@ -32,6 +37,10 @@ const AnswersBox = styled.div`
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
+
+    @media(max-width: 426px) {
+        border: 1px solid yellow;
+    }
     
 `;
 
@@ -42,11 +51,15 @@ const Button = styled.button.attrs(props=>({
     color: ${props => props.color};
     background-color: #F4F4F4;
     cursor: pointer;
-    height: 75px;
+    min-height: 75px;
     padding: 18px;
     flex: 1;
     flex-basis: 40%;
     margin: 0 20px;
+    
+    @media(max-width: 800px) {
+        width: 75%;
+    }
 `;
 
 const NextBox = styled.div`
@@ -62,7 +75,6 @@ const NextButton = styled.button`
     background-color: #E5E5E5;
     cursor: pointer;
     padding: 15px;
-    margin-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;

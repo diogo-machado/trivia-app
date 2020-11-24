@@ -10,7 +10,7 @@ const Questionaire = ({
   
 
     return (
-        <QuestionaireBox width="900px" heigth="520px">
+        <QuestionaireBox width="780px" heigth="520px">
             <QuestionBox dangerouslySetInnerHTML={{__html:question}} />
             <AnswersBox>
                 {answers.map((answer,idx)=>{

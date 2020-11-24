@@ -9,6 +9,12 @@ const FormChoices = styled(Box).attrs({as:'form'})`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media(max-width: 800px) {
+        width: 350px;
+
+    }
+
 `;
 
 export default FormChoices;
